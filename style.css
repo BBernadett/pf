@@ -208,7 +208,7 @@ li {
 
 .menu-active {
     transform: translateY(0);
-    width: 7rem;
+    width: 9rem;
 }
 
 .menu a {
@@ -407,7 +407,7 @@ footer {
     left: 0;
     bottom: 0;
     right: 0;
-    background: url('/img/bg.jpg') center;
+    background: url(/img/bg.jpg) center;
     opacity: .3;
     content: "";
     z-index: -1;

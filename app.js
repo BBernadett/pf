@@ -89,7 +89,7 @@ function SectionIntro() {
             React.createElement(
                 "p",
                 { className: "textHidden" },
-                "Kreat\xEDv emberk\xE9nt mindig is olyan munk\xE1t szerettem volna, ahol megval\xF3s\xEDthatom az \xF6tleteimet. Az egyik ok, ami\xE9rt a FrontEnd fejleszt\xE9st v\xE1lasztottam, hogy itt ki\xE9lhetem a kreativit\xE1s ir\xE1nti ig\xE9nyemet. M\xE9g mindig eml\xE9kszem, amikor el\u0151sz\xF6r k\xE9sz\xEDtettem egy HTML-oldalt, \xE9s megnyitottam a b\xF6ng\xE9sz\u0151ben. A lehet\u0151s\xE9gek teljesen \xFAj vil\xE1ga t\xE1rult a szemem el\xE9."
+                "Kreat\xEDv emberk\xE9nt mindig is olyan munk\xE1t szerettem volna, ahol megval\xF3s\xEDthatom az \xF6tleteimet. Az egyik ok, ami\xE9rt a FrontEnd fejleszt\xE9st v\xE1lasztottam, hogy itt ki\xE9lhetem a kreativit\xE1s ir\xE1nti ig\xE9nyemet. Eml\xE9kszem, amikor el\u0151sz\xF6r k\xE9sz\xEDtettem egy HTML-oldalt, \xE9s megnyitottam a b\xF6ng\xE9sz\u0151ben. A lehet\u0151s\xE9gek teljesen \xFAj vil\xE1ga t\xE1rult a szemem el\xE9."
             )
         ),
         React.createElement(
@@ -147,7 +147,7 @@ function SectionAbout() {
                         { className: "textHidden" },
                         "Jelenleg egy szoftverfejeszt\u0151 c\xE9gn\xE9l dolgozom, konzulensk\xE9nt. K\xF6zel 10 \xE9v ut\xE1n \xFAgy d\xF6nt\xF6ttem, hogy elj\xF6tt a karrierv\xE1lt\xE1s ideje. Lelkes, kitart\xF3, kreat\xEDv valamint terhelhet\u0151 embernek tartom magam, aki k\xF6nnyen alkalmazkodik. ",
                         React.createElement("br", null),
-                        "Szeretn\xE9k j\xF3 szakember lenni, amihez elengedhetetlen\xFCl fontosnak tartom a folyamatos szakmai tov\xE1bbk\xE9pz\xE9st. HTML, CSS, JavaScript, jQuery, PHP tanfolyamokat v\xE9geztem, valamint r\xE9sztvettem egy webdesign alapk\xE9pz\xE9sen is. Jelenleg Reactet tanulok. \xDAj karrierlehet\u0151s\xE9get keresve, a megadott el\xE9rhet\u0151s\xE9gek b\xE1rmelyik\xE9n v\xE1rom az aj\xE1nl\xE1sokat."
+                        "Szeretn\xE9k j\xF3 szakember lenni, amihez elengedhetetlen\xFCl fontosnak tartom a folyamatos szakmai tov\xE1bbk\xE9pz\xE9st. HTML, CSS, JavaScript, jQuery, PHP tanfolyamokat v\xE9geztem, valamint r\xE9sztvettem egy webdesign alapk\xE9pz\xE9sen is. Jelenleg Reactet tanulok. \xDAj karrierlehet\u0151s\xE9get keresve, a megadott el\xE9rhet\u0151s\xE9gek b\xE1rmelyik\xE9n v\xE1rom az aj\xE1nlatokat."
                     )
                 ),
                 React.createElement(

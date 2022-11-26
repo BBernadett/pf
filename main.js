@@ -40,6 +40,7 @@ window.addEventListener('scroll', function (e) {
         aboutMe.style.visibility = "visible";
         if (st > 532) {
             doType();
+
         }
     }
     lastScrollTop = st <= 0 ? 0 : st;
@@ -48,7 +49,7 @@ window.addEventListener('scroll', function (e) {
 
 
 let txt = "A few technologies I've been learning";
-let txtHu = "vmifdgdfg sdfgsdfg"
+let txtHu = "Néhány általam tanult technológia"
 var doType = (function () {
     var executed = false;
     return function () {
@@ -67,6 +68,7 @@ function typeWriter() {
             document.getElementById('techs').innerHTML += txt.charAt(i);
             i++;
         }
+
 
     }, 100);
 }
@@ -138,15 +140,16 @@ exampleCarousel.setControls();
 exampleCarousel.useControls();
 
 //HU || EN 
-const language = document.getElementById('isChecked').checked;
+
 const checkSwitch = document.getElementById('isChecked');
 const huText = document.querySelectorAll('.textHidden');
 const enText = document.querySelectorAll('.enText');
 const galleryEn = document.getElementById('galleryEn');
 const galleryHu = document.getElementById('galleryHu');
-
-
+let language = document.getElementById('isChecked').checked;
+language = false;
 checkSwitch.addEventListener('click', function (e) {
+    language = !language;
     huText.forEach(el => {
         el.classList.toggle('textHidden');
     });
@@ -155,13 +158,21 @@ checkSwitch.addEventListener('click', function (e) {
     });
     galleryEn.classList.toggle('galleryTxt');
     galleryHu.classList.toggle('galleryTxt');
-});
-function changeButton(language) {
-    if (true) {
+    if (language) {
         galleryControlsContainer.childNodes[0].innerHTML = ' <i class="fa-solid fa-arrow-left"></i> Előző';
         galleryControlsContainer.childNodes[1].innerHTML = 'Követ. <i class="fa-solid fa-arrow-right"></i>';
+        document.getElementById('techs').innerHTML = txtHu;
+
+    } else {
+        galleryControlsContainer.childNodes[0].innerHTML = ' <i class="fa-solid fa-arrow-left"></i> Prev';
+        galleryControlsContainer.childNodes[1].innerHTML = 'Next <i class="fa-solid fa-arrow-right"></i>';
+        document.getElementById('techs').innerHTML = txt;
     }
-}
+
+});
+
+
+
 
 
 

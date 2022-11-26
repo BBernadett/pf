@@ -39,7 +39,7 @@ function SectionIntro() {
             </p>
             <p className="textHidden">
             Kreatív emberként mindig is olyan munkát szerettem volna, ahol megvalósíthatom az ötleteimet. Az egyik ok, amiért a FrontEnd fejlesztést választottam, hogy itt kiélhetem a kreativitás iránti igényemet. 
-            Még mindig emlékszem, amikor először készítettem egy HTML-oldalt, és megnyitottam a böngészőben. A lehetőségek teljesen új világa tárult a szemem elé.
+            Emlékszem, amikor először készítettem egy HTML-oldalt, és megnyitottam a böngészőben. A lehetőségek teljesen új világa tárult a szemem elé.
             </p>
         </div>
         <button id="cv" type="button">
@@ -78,7 +78,7 @@ function SectionAbout() {
                         Jelenleg egy szoftverfejesztő cégnél dolgozom, konzulensként. Közel 10 év után úgy döntöttem, hogy eljött a karrierváltás ideje. 
                         Lelkes, kitartó, kreatív valamint terhelhető embernek tartom magam, aki könnyen alkalmazkodik. <br />
                         Szeretnék jó szakember lenni, amihez elengedhetetlenül fontosnak tartom a folyamatos szakmai továbbképzést. HTML, CSS, JavaScript, jQuery, PHP tanfolyamokat végeztem, valamint résztvettem egy webdesign alapképzésen is. Jelenleg Reactet tanulok.
-                        Új karrierlehetőséget keresve, a megadott elérhetőségek bármelyikén várom az ajánlásokat. 
+                        Új karrierlehetőséget keresve, a megadott elérhetőségek bármelyikén várom az ajánlatokat. 
                     </p>
                 </div>
                 <div className="imgContent">

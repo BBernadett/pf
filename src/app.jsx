@@ -12,19 +12,34 @@ function App() {
  
 
 function SectionIntro() {
-    return <section className="introduction" id="introduction">  
+    return <section className="introduction" id="introduction">
+        <span className="language">EN | HU</span>
+        <form>
+  <label className="switch" id="switch">
+    <input id="isChecked" type="checkbox"/>
+    <span className="slider round"></span>
+  </label>  
+</form> 
         <div className="fade-up">
-            <h1>Hi, my name is</h1>
+            <h1 className="enText">Hi, my name is</h1>
+            <h1 className="textHidden" id="huText">Köszöntelek oldalamon,</h1>
         </div>
         <div className="fade-up">
-            <h2>Bernadett Balázs</h2>
+            <h2 className="enText">Bernadett Balázs</h2>
+            <h2 className="textHidden">Balázs Bernadett <small> vagyok.</small></h2>
+            
         </div>
         <div className="fade-up">
-            <h3>Frontend development is what I'm most interested in and like to work with in the future.</h3>
+            <h3 className="enText">Frontend development is what I'm most interested in and like to work with in the future.</h3>
+            <h3 className="textHidden">A FrontEnd fejlesztés, ami a leginkább érdekel, és amivel a jövőben szeretnék foglalkozni.</h3>
         </div>
         <div>
-            <p>
+            <p className="enText">
             I always wanted a creative job where I can make my ideas real. I believe that the main reason is that front-end development satisfies my need for creativity. It enabled me to easily put my ideas into digital form and get results back really quick. I still remember the first time I created an HTML page and opened it in the browser. A whole new world of possibilities appeared before my eyes.
+            </p>
+            <p className="textHidden">
+            Kreatív emberként mindig is olyan munkát szerettem volna, ahol megvalósíthatom az ötleteimet. Az egyik ok, amiért a FrontEnd fejlesztést választottam, hogy itt kiélhetem a kreativitás iránti igényemet. 
+            Még mindig emlékszem, amikor először készítettem egy HTML-oldalt, és megnyitottam a böngészőben. A lehetőségek teljesen új világa tárult a szemem elé.
             </p>
         </div>
         <button id="cv" type="button">
@@ -41,13 +56,14 @@ function SectionIntro() {
 function SectionAbout() {
     return <section id="about" style={{visibility: "hidden"}}>
         <div className="aboutIn">
-            <h3 className="sectionTitle">About Me</h3>
+            <h3 className="sectionTitle enText">About Me</h3>
+            <h3 className="sectionTitle textHidden">Rólam</h3>
             <div>
                 <div>
-                    <p>
+                    <p className="enText">
                     Currently I'm working for a software
                                     development company as a consultant. I
-                                    decided to change career, half a year ago, I
+                                    decided to change career, more than half a year ago, I
                                     consider myself as an enthusiastic and
                                     creative person who can adapt to new
                                     circumstances easily and I also learnt to
@@ -56,10 +72,13 @@ function SectionAbout() {
                                     perfect choice for me. I believe that a
                                     person should work on developing their
                                     professional skills and learn new things all
-                                    the time. I am attending two courses at the
-                                    moment, one of them will be done soon,
-                                    therefore I am looking for a new career
-                                    opportunity.
+                                    the time. <br /> I am attending a React course at the moment and already completed other ones such as PHP, jQuery and JavaScript, so now I am looking for new career opportunities.
+                    </p>
+                    <p className="textHidden">
+                        Jelenleg egy szoftverfejesztő cégnél dolgozom, konzulensként. Közel 10 év után úgy döntöttem, hogy eljött a karrierváltás ideje. 
+                        Lelkes, kitartó, kreatív valamint terhelhető embernek tartom magam, aki könnyen alkalmazkodik. <br />
+                        Szeretnék jó szakember lenni, amihez elengedhetetlenül fontosnak tartom a folyamatos szakmai továbbképzést. HTML, CSS, JavaScript, jQuery, PHP tanfolyamokat végeztem, valamint résztvettem egy webdesign alapképzésen is. Jelenleg Reactet tanulok.
+                        Új karrierlehetőséget keresve, a megadott elérhetőségek bármelyikén várom az ajánlásokat. 
                     </p>
                 </div>
                 <div className="imgContent">
@@ -86,7 +105,8 @@ function SectionJobs() {
     return <section id="jobs">
     <div className="gallery">
         <div>
-            <h2>My projects</h2>
+            <h2 className="enText galleryTxt" id="galleryEn">My projects</h2>
+            <h2 className="textHidden" id="galleryHu">Munkáim</h2>
         </div>
         <div className="gallery-contanier">
         <div>

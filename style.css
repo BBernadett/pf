@@ -65,6 +65,76 @@ header {
 
 }
 
+.textHidden {
+    display: none;
+}
+
+
+/*toggle switch*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 2.125rem;
+    height: 1.3125rem;
+    margin: 0.5rem auto;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--dark-slate);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.language {
+    font-size: 0.75rem;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 0.9375rem;
+    width: 0.73rem;
+    left: 4px;
+    bottom: 3.5px;
+    background-color: whitesmoke;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: var(--light-green);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2286eb;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(0.875rem);
+    -ms-transform: translateX(0.875rem);
+    transform: translateX(0.875rem);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 9px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
 
 #cv {
     color: #06d8f8;
@@ -177,6 +247,11 @@ li {
     animation: fadeIn 8s forwards;
 }
 
+/*.about {
+    opacity: 0;
+    animation: fadeIn 8s forwards;
+}*/
+
 .introduction,
 .about,
 .contact {
@@ -236,7 +311,7 @@ p {
     word-spacing: 0.1rem;
 }
 
-.gallery>div:nth-child(1)>h2:nth-child(1) {
+.galleryTxt {
     padding: 1rem;
     background: -webkit-linear-gradient(#14767f, white);
     -webkit-background-clip: text;
@@ -248,7 +323,7 @@ p {
     display: block;
 }
 
-.gallery>div:nth-child(1)>h2:nth-child(1)::after {
+.gallery h2::after {
     content: '\00a0';
     background-image:
         radial-gradient(at 50% 0, white 0%, #14767f 50%, transparent 75%);
@@ -303,7 +378,7 @@ footer {
     position: relative;
     z-index: 1;
     visibility: visible;
-    animation: slideRight 10s forwards 10s;
+    animation: fadeIn 10s forwards;
 }
 
 .about2::before {
@@ -318,14 +393,13 @@ footer {
     z-index: -1;
 }
 
-.about {
+/*.about {
     margin: 0;
     opacity: 0;
-    left: -50%;
-    animation: slideLeft 3s forwards 1s;
+    animation: fadeIn 3s forwards 1s;
     position: relative;
     z-index: 1;
-}
+}*/
 
 .about::before {
     position: absolute;

@@ -314,7 +314,7 @@ p {
 .galleryTxt {
     padding: 1rem;
     background: -webkit-linear-gradient(#14767f, white);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.5rem;
     font-family: var(--font-mono);
